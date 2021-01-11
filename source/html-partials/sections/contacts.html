@@ -1,0 +1,25 @@
+<section class="contacts__wrap" id="contacts" data-section>
+    <div class="contacts container">
+
+      <h2 class="title title--xl contacts__title">Напишите мне</h2>
+      <p class="contacts__text">Заполните форму, чтобы связаться по электронной почте</p>
+
+      <form class="form contacts__form" method="POST" action="send.php">
+        <p class="form__item">
+          <label for="mail">Email</label>
+          <input id="mail" type="email" name="email" required>
+        </p>
+        <p class="form__item">
+          <label for="subject">Тема</label>
+          <input id="subject" type="text" name="subject">
+        </p>
+        <div class="form__item">
+          <label for="message">Ваше сообщение</label>
+          <textarea id="message" name="message" cols="" rows="" required></textarea>
+        </div>
+
+        <button class="button button--pink contacts__btn" type="submit">Отправить</button>
+      </form>
+
+    </div>
+</section>

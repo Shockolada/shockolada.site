@@ -1,0 +1,15 @@
+.portfolio {
+  padding-top: 20px;
+}
+
+.portfolio__list {
+  @include list-reset;
+}
+
+@media (min-width: $tablet) {}
+
+@media (min-width: $desktop_xs) {
+  .portfolio {
+    padding-top: 40px;
+  }
+}

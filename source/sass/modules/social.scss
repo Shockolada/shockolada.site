@@ -1,0 +1,41 @@
+.social {
+  display: flex;
+  align-items: center;
+
+  @include list-reset;
+
+  // max-width: 280px;
+  // min-height: 24px;
+  margin-right: -16px;
+}
+
+.social__item {
+  margin-right: 16px;
+  padding: 0;
+
+  font-size: 0;
+  line-height: 0;
+}
+
+.social__link {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+  }
+}
+
+.social__icon {
+  width: 18px;
+  height: 18px;
+}

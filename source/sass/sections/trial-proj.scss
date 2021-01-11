@@ -1,0 +1,253 @@
+// .project-example {
+//   position: relative;
+//   width: 100%;
+//   box-sizing: border-box;
+// }
+
+// .project-example__image-wrap {
+//   width: 100%;
+//   min-height: 213px;
+
+//   background-color: $color-bg-hover;
+// }
+
+// .project-example__image {
+//   width: 100%;
+//   height: auto;
+// }
+
+// .project-example__description {
+//   position: relative;
+//   z-index: 1;
+
+//   margin: 0 16px;
+//   margin-top: -25px;
+//   margin-bottom: 64px;
+//   padding: 13px 16px;
+//   padding-bottom: 18px;
+//   box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.2);
+
+//   background-color: #ffffff;
+// }
+
+// .project-example__title {
+//   margin: 0;
+
+//   font-family: $font-accent;
+//   font-weight: 700;
+//   font-size: 16px;
+// }
+
+// .project-example__name {
+//   margin: 0;
+
+//   font-family: $font-accent;
+//   font-weight: 700;
+//   font-size: 24px;
+//   line-height: 56px;
+// }
+
+// .project-example__text {
+//   margin: 0;
+//   margin-bottom: 8px;
+
+//   font-size: 12px;
+//   line-height: 16px;
+// }
+
+// .project-example__text span {
+//   display: none;
+// }
+
+// .project-example__text:last-of-type {
+//   margin-bottom: 25px;
+// }
+
+// .project-example__technologies-align {
+//   max-width: 88%;
+//   margin: 0 auto;
+// }
+
+// .project-example__technologies {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+
+//   margin-right: -24px;
+//   margin-bottom: 7px;
+//   padding: 0;
+//   list-style: none;
+// }
+
+// .project-example__technologies li {
+//   margin-right: 24px;
+//   margin-bottom: 10px;
+// }
+
+// .project-example__technologies img {
+//   height: 48px;
+// }
+
+// .project-example__btn {
+//   float: right;
+// }
+
+
+// @media(min-width: $tablet-width) {
+
+//   .project-example {
+//     min-height: 400px;
+//     padding: 16px;
+//     padding-bottom: 0;
+//   }
+
+//   .project-example__image-wrap {
+//     position: absolute;
+//     top: 0;
+//     right: 40px;
+
+//     right: 16px;
+
+//     width: 80%;
+//     min-height: 400px;
+//   }
+
+//   .project-example__description {
+//     margin: 0;
+//     padding: 0 16px;
+
+//     box-shadow: unset;
+//     background: none;
+//   }
+
+//   .project-example__title {
+//     margin-bottom: 50px;
+
+//     font-size: 22px;
+//   }
+
+//   .project-example__bg-wrap {
+//     position: relative;
+
+//     width: 25%;
+//     margin-left: -16px;
+//     margin-bottom: 64px;
+//     padding: 30px 16px;
+//     padding-top: 35px;
+
+//     box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.2);
+//     background-color: #ffffff;
+//   }
+
+//   .project-example__name {
+//     position: absolute;
+//     top: -28px;
+
+//     font-size: 50px;
+//   }
+
+//   .project-example__text {
+//     font-size: 16px;
+//     line-height: 22px;
+//   }
+
+//   .project-example__technologies-align {
+//     max-width: 100%;
+//   }
+
+//   .project-example__technologies {
+//     justify-content: flex-start;
+//     margin-bottom: 20px;
+//   }
+
+//   .project-example__technologies li {
+//     margin-right: 20px;
+//     height: 40px;
+//   }
+
+//   .project-example__technologies img {
+//     height: 40px;
+//   }
+
+//   .project-example__btn {
+//     float: none;
+//   }
+// }
+
+
+// @media(min-width: $desktop-xs-width) {
+
+//   .project-example {
+//     min-height: 545px;
+//     padding-top: 17px;
+//   }
+
+//   .project-example__image-wrap {
+//     right: 40px;
+//   }
+
+//   .project-example__title {
+//     font-size: 24px;
+//   }
+
+//   .project-example__bg-wrap {
+//     padding: 50px 16px;
+//   }
+
+//   .project-example__name {
+//     font-size: 64px;
+//   }
+
+//   .project-example__text {
+//     font-size: 18px;
+//     line-height: 30px;
+//   }
+
+//   .project-example__technologies li {
+//     margin-right: 24px;
+//     height: 48px;
+//   }
+
+//   .project-example__technologies img {
+//     height: 48px;
+//   }
+// }
+
+
+// @media(min-width: $desktop-width) {
+
+//   .project-example {
+//     min-height: 628px;
+//     margin-left: 58px;
+//     margin-right: 58px;
+//     padding: 0 17px;
+//     padding-top: 42px;
+//   }
+
+//   .project-example__image-wrap {
+//     right: 16px;
+//     width: 942px;
+//     height: 604px;
+//   }
+
+//   .project-example__image {
+//     width: 942px;
+//     height: 628px;
+//   }
+
+//   .project-example__description {
+//     padding: 0;
+//   }
+
+//   .project-example__title {
+//     margin-bottom: 68px;
+//   }
+
+//   .project-example__bg-wrap {
+//     width: 28%;
+//     margin-left: -24px;
+//     padding: 50px 24px;
+//     padding-bottom: 40px;
+//     box-sizing: border-box;
+//   }
+// }

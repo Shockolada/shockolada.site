@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./html-partials/basic/head.html')
+
+<body>
+
+  @@include('./html-partials/basic/google-tag-manager-in-body.html')
+
+  @@include('./html-partials/sections/main/page-header.html')
+
+  <main class="page-content">
+
+    <h1 class="visually-hidden">Shockolada.site - портфолио веб-разработчика</h1>
+
+    @@include('./html-partials/sections/hero.html')
+
+    @@include('./html-partials/sections/portfolio.html')
+
+    @@include('./html-partials/sections/contacts.html')
+
+  </main>
+
+  @@include('./html-partials/sections/main/page-footer.html')
+
+
+  <template id="form-alert">
+    <div class="modal-overlay modal">
+      <div class="send">
+        <p>Ваше письмо отправлено</p>
+        <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
+      </div>
+    </div>
+  </template>
+
+  @@include('./html-partials/basic/scripts.html')
+
+</body>
+</html>

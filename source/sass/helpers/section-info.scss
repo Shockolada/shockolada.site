@@ -1,0 +1,13 @@
+.section-info {
+  max-width: 550px;
+  margin: 0 auto;
+  margin-bottom: calcResponsiveSize(15, 55);
+  @include responsiveFontSize(16, 24);
+  text-align: center;
+}
+
+@media (min-width: $desktop-container) {
+  .section-info {
+    margin-bottom: 55px;
+  }
+}

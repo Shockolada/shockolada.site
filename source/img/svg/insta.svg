@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY st0 "fill:url(#Shape_2_);">
+	<!ENTITY st1 "fill:url(#Shape_3_);">
+	<!ENTITY st2 "fill:url(#Oval_1_);">
+]>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<g id="Page-1">
+	<g id="shockolada" transform="translate(-1416.000000, -28.000000)">
+		<g id="icon-instagram" transform="translate(1416.000000, 28.000000)">
+			<g id="Instagram_new">
+				
+					<linearGradient id="Shape_2_" gradientUnits="userSpaceOnUse" x1="-412.8892" y1="430.3921" x2="-412.8892" y2="431.3814" gradientTransform="matrix(15.972 0 0 -15.972 6602.6519 6890.1479)">
+					<stop  offset="0" style="stop-color:#E09B3D"/>
+					<stop  offset="0.3" style="stop-color:#C74C4D"/>
+					<stop  offset="0.6" style="stop-color:#C21975"/>
+					<stop  offset="1" style="stop-color:#7024C4"/>
+				</linearGradient>
+				<path id="Shape" style="&st0;" d="M11.2,0H4.8C2.1,0,0,2.1,0,4.8v6.5C0,13.8,2.1,16,4.8,16h6.5c2.6,0,4.8-2.1,4.8-4.8V4.8
+					C16,2.1,13.8,0,11.2,0z M11.2,14.4H4.8c-1.7,0-3.2-1.4-3.2-3.2V4.8C1.6,3,3,1.6,4.8,1.6h6.5c1.7,0,3.2,1.4,3.2,3.2v6.5
+					C14.4,13,13,14.4,11.2,14.4z"/>
+				
+					<linearGradient id="Shape_3_" gradientUnits="userSpaceOnUse" x1="-387.1222" y1="404.161" x2="-387.1222" y2="406.0736" gradientTransform="matrix(8.2619 0 0 -8.2618 3206.3328 3355.033)">
+					<stop  offset="0" style="stop-color:#E09B3D"/>
+					<stop  offset="0.3" style="stop-color:#C74C4D"/>
+					<stop  offset="0.6" style="stop-color:#C21975"/>
+					<stop  offset="1" style="stop-color:#7024C4"/>
+				</linearGradient>
+				<path id="Shape_1_" style="&st1;" d="M8,3.9C5.7,3.9,3.9,5.7,3.9,8s1.9,4.1,4.1,4.1s4.1-1.9,4.1-4.1S10.3,3.9,8,3.9z M8,10.5
+					c-1.4,0-2.5-1.1-2.5-2.5S6.6,5.5,8,5.5c1.4,0,2.5,1.1,2.5,2.5C10.5,9.4,9.4,10.5,8,10.5z"/>
+				
+					<linearGradient id="Oval_1_" gradientUnits="userSpaceOnUse" x1="-220" y1="231.9186" x2="-220" y2="239.9003" gradientTransform="matrix(2 0 0 -2 452.1249 479.8861)">
+					<stop  offset="0" style="stop-color:#E09B3D"/>
+					<stop  offset="0.3" style="stop-color:#C74C4D"/>
+					<stop  offset="0.6" style="stop-color:#C21975"/>
+					<stop  offset="1" style="stop-color:#7024C4"/>
+				</linearGradient>
+				<circle id="Oval" style="&st2;" cx="12.1" cy="3.9" r="1"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

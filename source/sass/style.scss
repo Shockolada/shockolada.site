@@ -1,0 +1,54 @@
+@import "variables/variables.scss";
+
+@import "functions/strip-units.scss";
+@import "functions/calc-responsive-size.scss";
+@import "functions/calc-nagative-responsive-size.scss";
+
+@import "mixins/responsive-font-size.scss";
+@import "mixins/visually-hidden.scss";
+@import "mixins/clearfix.scss";
+@import "mixins/list-reset.scss";
+
+/* BASIC PAGE NEEDS */
+@import "basic/fonts.scss";
+@import "basic/normalize.scss";
+@import "basic/scaffolding.scss";
+@import "basic/scroll-lock.scss";
+
+/* LIBRARIES */
+
+/* MODULES */
+@import "modules/burger-btn.scss";
+@import "modules/close-btn.scss";
+@import "modules/social.scss";
+@import "modules/technologies.scss";
+
+/* HELPERS */
+@import "helpers/container.scss";
+@import "helpers/visually-hidden.scss";
+@import "helpers/button.scss";
+@import "helpers/link.scss";
+@import "helpers/text-content.scss";
+@import "helpers/title.scss";
+@import "helpers/modal.scss";
+@import "helpers/overlay.scss";
+@import "helpers/section.scss";
+@import "helpers/section-info.scss";
+@import "helpers/form.scss";
+
+
+/* SECTIONS */
+@import "sections/main/page-header.scss";
+@import "sections/main/page-content.scss";
+@import "sections/main/menu-mobile.scss";
+@import "sections/main/main-nav.scss";
+@import "sections/main/page-footer.scss";
+
+@import "sections/hero.scss";
+@import "sections/hero-slider.scss";
+@import "sections/hero-slide.scss";
+@import "sections/portfolio.scss";
+@import "sections/project.scss";
+@import "sections/laboratory.scss";
+@import "sections/trial-proj.scss";
+@import "sections/contacts.scss";

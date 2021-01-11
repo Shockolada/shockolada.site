@@ -1,0 +1,39 @@
+.title {
+  margin: 0;
+  margin-bottom: calcResponsiveSize(10, 50);
+
+  font-family: $font-accent;
+  @include responsiveFontSize(32, 60, 320, $desktop-container);
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.9;
+  letter-spacing: 0.3px;
+}
+
+.title--xl {
+  margin-bottom: calcResponsiveSize(20, 40);
+  @include responsiveFontSize(32, 80);
+}
+
+@media(min-width: $desktop_xs) {
+  .title {
+    position: relative;
+    letter-spacing: 0.5px;
+
+    &::before {
+      content: attr(data-shadow);
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1.7);
+      color: rgba(24, 25, 27, 0.06);
+    }
+  }
+}
+
+@media (min-width: $desktop-container) {
+  .title {
+    margin-bottom: 50px;
+  }
+}

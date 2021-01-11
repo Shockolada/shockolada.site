@@ -1,0 +1,66 @@
+.form {
+  button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+.form__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.form label {
+  font-family: $font-accent;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 15px 10px;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: #ffffff;
+
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 500;
+  color: $color-text;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover .form textarea:focus {
+  outline-color: $color-accent;
+}
+
+.form textarea {
+  height: 120px;
+}
+
+@media(min-width: $tablet) {
+
+  .form {
+    button[type="submit"] {
+      padding: 20px 30px;
+    }
+  }
+
+  .form__item input,
+  .form textarea {
+    padding: 18px 16px;
+  }
+
+  .form textarea {
+    height: 130px;
+  }
+
+  .form__item {
+    margin-bottom: 24px;
+  }
+}

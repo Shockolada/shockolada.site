@@ -1,0 +1,129 @@
+.project {
+  padding: 0 16px;
+  padding-bottom: 18px;
+
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.project__image-wrap {
+  width: calc(100% + 32px);
+  // min-height: 190px;
+  margin-left: -16px;
+  margin-bottom: 8px;
+
+  // background-color: $color-gray;
+}
+
+.project__image {
+  display: block;
+  width: 100%;
+}
+
+.project__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $font-accent;
+  @include responsiveFontSize(12, 24);
+  font-weight: 700;
+}
+
+.project__name {
+  margin: 0;
+  margin: 10px 0;
+  font-family: $font-accent;
+  @include responsiveFontSize(24, 32);
+  font-weight: 700;
+}
+
+.project__technologies-title {
+  margin: 20px 0;
+  @include responsiveFontSize(13, 16);
+}
+
+.project__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 -13px;
+  margin-bottom: -13px;
+}
+
+.project__btn {
+  margin: 0 13px;
+  margin-bottom: 13px;
+}
+
+@media (min-width: $tablet) {
+  .project__links {
+    flex-direction: row;
+  }
+}
+
+@media(min-width: $desktop_xs) {
+
+  .project {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+
+    box-shadow: unset;
+  }
+
+  .project:not(:last-child) {
+    margin-bottom: 100px;
+  }
+
+  .project__image-wrap,
+  .project__content {
+    width: calc(50% - 15px);
+  }
+
+  .project__image-wrap {
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .project__title {
+    display: none;
+  }
+
+  .project__name {
+    margin: 0;
+  }
+
+  .project:nth-child(2n) {
+    flex-direction: row-reverse;
+
+    .project__list {
+      li {
+        padding-left: 0;
+        padding-right: 16px;
+
+        &::before {
+          left: unset;
+          right: 0;
+        }
+      }
+    }
+
+    .project__content {
+      text-align: right;
+    }
+
+    .project__image-wrap {
+      margin-left: 30px;
+      margin-right: 0;
+    }
+
+    .project__links {
+      justify-content: flex-end;
+    }
+  }
+}

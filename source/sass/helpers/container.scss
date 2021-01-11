@@ -1,0 +1,13 @@
+/* CONTAINER */
+.container {
+  min-width: 320px;
+  max-width: $desktop-container;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: $desktop_s) {
+  .container {
+    padding: 0 100px;
+  }
+}

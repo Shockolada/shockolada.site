@@ -1,0 +1,43 @@
+@media(max-width: $desktop_xs - 1px) {
+  .menu-mobile {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: calc(100vh - 45px);
+    padding: 20px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+
+    transition: 0.35s transform 0.2s cubic-bezier(.25, 1.7, 0.35, 0.8), 0.3s top linear;
+    transform: translateX(-100%);
+  }
+
+  .menu-mobile.active {
+    transform: translateX(0);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-mobile__toggle {
+    margin-right: 15px;
+    margin-left: -6px;
+  }
+}
+
+@media(min-width: $mobile_m) and (max-width: $desktop_xs - 1px) {
+  .menu-mobile {
+    width: auto;
+    height: auto;
+    max-width: 240px;
+  }
+}
+
+
+@media(min-width: $desktop_xs) {
+  .menu-mobile__toggle {
+    display: none;
+  }
+}

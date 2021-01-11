@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style>
+	.st0{fill:#111111;}
+</style>
+<g id="Stacked-Group-2" transform="translate(1511.000000, 486.000000)">
+
+		<g id="tail-up" transform="translate(8.500000, 8.000000) rotate(-90.000000) translate(-8.500000, -8.000000) translate(1.000000, 0.000000)">
+		<path id="Shape" class="st0" d="M493-1511c0-0.3,0.2-0.5,0.5-0.5s0.5,0.2,0.5,0.5v15c0,0.3-0.2,0.5-0.5,0.5s-0.5-0.2-0.5-0.5
+			V-1511z"/>
+		<path id="Shape_1_" class="st0" d="M493.5-1496.7l7.1-7.1c0.2-0.2,0.5-0.2,0.7,0c0.2,0.2,0.2,0.5,0,0.7l-7.5,7.5
+			c-0.2,0.2-0.5,0.2-0.7,0l-7.5-7.5c-0.2-0.2-0.2-0.5,0-0.7c0.2-0.2,0.5-0.2,0.7,0L493.5-1496.7z"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,11 @@
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  @include list-reset;
+  margin-right: -24px;
+}
+
+.technologies__item {
+  margin-right: 24px;
+}
+

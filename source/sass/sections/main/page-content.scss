@@ -1,0 +1,10 @@
+.page-content {
+  padding-top: 56px;
+}
+
+
+@media(min-width: $desktop_xs) {
+  .page-content {
+    padding-top: 60px;
+  }
+}
