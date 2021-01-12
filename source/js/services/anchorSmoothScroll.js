@@ -1,5 +1,9 @@
+import smoothscroll from 'smoothscroll-polyfill';
+
 const anchorSmoothScroll = (triggerSelector, offsetTop = 0) => {
   const triggers = document.querySelectorAll(triggerSelector);
+
+  smoothscroll.polyfill();
 
   triggers.forEach(link => {
     link.addEventListener('click', function (evt) {
