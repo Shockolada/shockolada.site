@@ -1,3 +1,4 @@
+import focusvisible from 'focus-visible';
 import svgxuse from 'svgxuse';
 import header from './modules/header';
 import menu from './modules/menu';

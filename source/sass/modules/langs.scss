@@ -1,0 +1,41 @@
+.langs {}
+
+.langs__list {
+  display: flex;
+  align-items: center;
+  @include list-reset;
+  margin: 0 -2px;
+}
+
+.langs__item {
+  margin: 0 4px;
+}
+
+.langs__link {
+  padding: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #999999;
+  transition: 0.2s color linear;
+}
+
+.langs__link:hover {
+  color: $color-black;
+}
+
+.langs__link.active {
+  display: none;
+}
+
+@media (min-width: $desktop_xs) {
+  .langs__list {
+    margin: 0 -4px;
+  }
+
+  .langs__link {
+    padding: 20px 4px;
+    padding-bottom: 13px;
+  }
+}

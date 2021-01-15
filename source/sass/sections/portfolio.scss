@@ -6,10 +6,22 @@
   @include list-reset;
 }
 
-@media (min-width: $tablet) {}
+.portfolio__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+@media (min-width: $tablet) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 56px;
+  }
+}
 
 @media (min-width: $desktop_xs) {
   .portfolio {
     padding-top: 40px;
+  }
+
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 100px;
   }
 }

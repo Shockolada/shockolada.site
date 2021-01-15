@@ -1,6 +1,7 @@
 const menu = () => {
   const menu = document.querySelector('.menu-mobile'),
-    menuTrigger = document.querySelector('.menuToggleBtn');
+    menuTrigger = document.querySelector('.menuToggleBtn'),
+    menuLink = menu.querySelectorAll('.main-nav__link');
 
   menuTrigger.addEventListener('click', (evt) => {
     if (evt.target) {
@@ -13,6 +14,16 @@ const menu = () => {
       openMenu();
     }
   });
+
+  menuLink.forEach(link => {
+    link.addEventListener('click', (evt) => {
+      if (evt.target) {
+        evt.preventDefault();
+      }
+  
+      closeMenu();
+    });
+  })
 
   function openMenu() {
     menu.classList.add('active');

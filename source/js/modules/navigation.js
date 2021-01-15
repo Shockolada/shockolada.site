@@ -2,14 +2,14 @@ const navigation = () => {
 
   const sections = document.querySelectorAll('[data-section]'),
     navigationBox = document.querySelector('.main-nav'),
-    navigationLinks = navigationBox.querySelectorAll('a');
+    navigationLinks = navigationBox.querySelectorAll('.main-nav__link');
 
   addHighlight(navigationLinks[0]);
 
   navigationBox.addEventListener('click', function (evt) {
     const target = evt.target;
 
-    if (evt.target && evt.target.closest('a') || evt.target && evt.target.matches('a')) {
+    if (evt.target && evt.target.closest('.main-nav__link') || evt.target && evt.target.matches('.main-nav__link')) {
       evt.preventDefault();
 
       navigationLinks.forEach((link) => {
@@ -37,7 +37,7 @@ const navigation = () => {
   function highlightByScroll() {
     sections.forEach((item) => {
       let pageY = document.documentElement.scrollTop,
-        topOffset = document.querySelector('.page-header__wrap').offsetHeight,
+        topOffset = document.querySelector('.page-header').offsetHeight,
         elTop = item.offsetTop - topOffset - 2,
         elBottom = elTop + item.offsetHeight,
         id = item.id;

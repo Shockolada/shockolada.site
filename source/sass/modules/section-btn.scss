@@ -1,0 +1,28 @@
+.section-btn {
+  display: inline-block;
+  min-width: 176px;
+  box-sizing: border-box;
+  padding: 11px 20px;
+  border: solid 2px #777777;
+  border-radius: 10px;
+  cursor: pointer;
+
+  font-family: $font-accent;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #777777;
+
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.section-btn:hover {
+  box-shadow: 0 16px 40px 0 rgba(0,0,0,.6);
+  transform: scale(1.03);
+  border-color: transparent;
+  color: $color-black;
+}

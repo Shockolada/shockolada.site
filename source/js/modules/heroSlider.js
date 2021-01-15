@@ -10,8 +10,9 @@ function heroSlider() {
       nextEl: '.hero-slider__button-next',
       prevEl: '.hero-slider__button-prev',
     },
+    loop: true,
     parallax: true,
-    speed: 1300,
+    speed: 800,
     slidesPerView: 1,
     spaceBetween: 30,
     breakpoints: {

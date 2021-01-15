@@ -5,8 +5,9 @@
     left: 0;
     z-index: 10;
 
-    width: 100%;
-    height: calc(100vh - 45px);
+    width: auto;
+    max-width: 240px;
+    height: auto;
     padding: 20px;
     padding-right: 30px;
     box-sizing: border-box;
@@ -19,6 +20,16 @@
   .menu-mobile.active {
     transform: translateX(0);
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+
+    &::before {
+      position: absolute;
+      left: 0;
+      bottom: 100%;
+      content: "";
+      width: 100%;
+      height: 10px;
+      background-color: $color-white;
+    }
   }
 
   .menu-mobile__toggle {

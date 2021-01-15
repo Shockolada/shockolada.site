@@ -51,17 +51,12 @@
   }
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
   box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.6);
   transform: scale(1.03);
 }
 
-.button--link:hover,
-.button--link:focus {
-  // background-color: $color-gray;
-  // box-shadow: unset;
-  // transform: scale(1);
+.button--link:hover {
 
   span {
     &::after {

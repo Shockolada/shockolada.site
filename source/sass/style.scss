@@ -22,6 +22,8 @@
 @import "modules/close-btn.scss";
 @import "modules/social.scss";
 @import "modules/technologies.scss";
+@import "modules/section-btn.scss";
+@import "modules/langs.scss";
 
 /* HELPERS */
 @import "helpers/container.scss";
@@ -34,8 +36,8 @@
 @import "helpers/overlay.scss";
 @import "helpers/section.scss";
 @import "helpers/section-info.scss";
+@import "helpers/focus-visible.scss";
 @import "helpers/form.scss";
-
 
 /* SECTIONS */
 @import "sections/main/page-header.scss";

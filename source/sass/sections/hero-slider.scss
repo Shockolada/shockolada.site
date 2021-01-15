@@ -17,15 +17,17 @@
 
   display: flex;
   align-items: center;
+  min-width: 156px;
   padding: 8px;
-  padding-top: 11px;
+  padding-top: 12px;
 
   background-color: #ffffff;
   box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.2);
 }
 
 .hero-slider__pagination {
-  margin-right: 15px;
+  margin-right: 16px;
+  font-size: 16px;
   font-family: $font-accent;
   color: rgba($color-text, 0.4);
 
@@ -55,6 +57,7 @@
 .hero-slider__arrow {
   padding: 5px 5px;
   cursor: pointer;
+  transition: 0.2s opacity linear;
 }
 
 .hero-slider__arrow:first-child {
@@ -65,10 +68,17 @@
   width: 16px;
   height: 11px;
   fill: rgba($color-text, 0.4);
+  transition: 0.2s fill linear;
 }
 
 .hero-slider__note {
   display: none;
+}
+
+.hero-slider__arrow:hover {
+  .hero-slider__arrow-icon {
+    fill: $color-text;
+  }
 }
 
 @media (min-width: $tablet_s) {
@@ -84,6 +94,7 @@
     right: unset;
     flex-direction: column;
     align-items: flex-end;
+    min-width: 76px;
     padding: 15px;
   }
 
@@ -119,7 +130,7 @@
     }
 
     &::after {
-      left: 40px;
+      left: 48px;
       width: 80px;
       background-color: $color-text;
     }
@@ -187,7 +198,7 @@
   .hero-slider__controls {
     top: 120px;
     right: 70px;
-    width: 104px;
+    min-width: 104px;
     padding: 30px;
   }
 }

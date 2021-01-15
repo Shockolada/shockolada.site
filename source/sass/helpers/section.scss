@@ -6,33 +6,25 @@
 
 .section__btn {
   align-self: center;
-  // padding: 8px 20px;
-  // @include responsiveFontSize(12, 14);
-  // font-weight: 600;
-  // text-transform: uppercase;
-  // color: #000000;
-  // background-color: #ededed;
-  // border-radius: 10px;
-  // border: 1px solid #777777;
-  // cursor: pointer;
-
-  // transition: 0.2s all;
-}
-
-.section__btn:hover,
-.section__btn:focus {
-  // transform: scale(1.05);
-  // box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 32px;
 }
 
 @media (min-width: $tablet) {
   .section {
     margin-bottom: 70px;
   }
+
+  .section__btn {
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: $desktop_xs) {
   .section {
     margin-bottom: 110px;
+  }
+
+  .section__btn {
+    margin-top: 80px;
   }
 }

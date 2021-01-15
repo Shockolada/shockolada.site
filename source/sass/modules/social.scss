@@ -28,11 +28,10 @@
   background-position: center;
 
   transition: all 0.2s ease-in-out;
+}
 
-  &:hover,
-  &:focus {
-    transform: scale(1.5);
-  }
+.social__link:hover {
+  transform: scale(1.5);
 }
 
 .social__icon {

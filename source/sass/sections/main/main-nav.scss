@@ -19,11 +19,10 @@
   color: #999999;
 
   transition: all 0.2s linear;
+}
 
-  &:hover,
-  &:focus {
-    color: $color-black;
-  }
+.main-nav__link:hover {
+  color: $color-black;
 }
 
 .main-nav__link.active {
