@@ -13,7 +13,8 @@
     box-sizing: border-box;
     background-color: #ffffff;
 
-    transition: 0.35s transform 0.2s cubic-bezier(.25, 1.7, 0.35, 0.8), 0.3s top linear;
+    // transition: 0.35s transform 0.2s cubic-bezier(.25, 1.7, 0.35, 0.8), 0.3s top linear;
+    transition: 0.2s all linear;
     transform: translateX(-100%);
   }
 

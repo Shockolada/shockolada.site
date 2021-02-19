@@ -1,20 +1,130 @@
   <section class="portfolio container section" id="portfolio" data-section>
-    <h2 class="title" data-shadow="Портфолио">Портфолио</h2>
-    <p class="section-info">Чудо-остров, чудо остров, жить на нем легко и просто,
-      Жить на нем легко и просто, Чунга-чанга!</p>
+    <div class="section__info">
+      <h2 class="title" data-shadow="Портфолио">Портфолио</h2>
+      <div class="section-info">
+        <p>In this portfolio you can see my works for last 3 years.</p>
+        <p>Enjoy</p>
+      </div>
+    </div>
 
     <ul class="portfolio__list">
       <li class="portfolio__item">
         <article class="project">
           <div class="project__image-wrap">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/projects/01.png 1x">
-              <img class="project__image" src="img/projects/01.png" alt="Превью проекта Yes">
-            </picture>
+            <a class="project__image-link" href="#" data-hover-tooltip="На сайт">
+              <!-- 920 х 640 -->
+              <img class="project__image" src="img/mockups/new.png" alt="Превью проекта ARTACTIVE">
+            </a>
+          </div>
+          <div class="project__content">
+            <!-- <span class="project__title">Проект:</span> -->
+            <h2 class="project__name">Wooder</h2>
+            <div class="project__info">
+              <span class="project__period">Период: Июнь 2020</span>
+              <p>Верстка уникального шаблона для декор-студии изделий из дерева Wooder.
+                Фиксированный сайт.</p>
+            </div>
+            <div class="project__info text-content">
+              <h3>Технологии:</h3>
+              <ul>
+                <li>HTML5 - семантическая разметка сайта</li>
+                <li>CSS3</li>
+                <li>Препроцессор Sass + Gulp</li>
+                <li>Адаптивная верстка</li>
+                <li>Адаптивные изображения</li>
+                <li>jQuery</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="project__links">
+              <a class="button project__btn" href="http://shockolada.site/projects/yes/" target="_blank">Перейти</a>
+              <a class="button button--link project__btn" href="https://github.com/Shockolada/yes"
+                target="_blank"><span>Посмотреть на GitHub</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="portfolio__item">
+        <article class="project">
+          <div class="project__image-wrap">
+            <a class="project__image-link" href="#" data-hover-tooltip="На сайт">
+              <img class="project__image" src="img/mockups/002.png" alt="Превью проекта ARTACTIVE">
+            </a>
+          </div>
+          <div class="project__content">
+            <span class="project__title">Проект:</span>
+            <h1 class="project__name">Wooder</h1>
+            <div class="text-content">
+              <p>Верстка уникального шаблона для декор-студии изделий из дерева Wooder.
+                Фиксированный сайт.</p>
+              <h3>Технологии:</h3>
+              <ul>
+                <li>HTML5 - семантическая разметка сайта</li>
+                <li>CSS3</li>
+                <li>Препроцессор Sass + Gulp</li>
+                <li>Адаптивная верстка</li>
+                <li>Адаптивные изображения</li>
+                <li>jQuery</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="project__links">
+              <a class="button project__btn" href="http://shockolada.site/projects/yes/" target="_blank">Перейти</a>
+              <a class="button button--link project__btn" href="https://github.com/Shockolada/yes"
+                target="_blank"><span>Посмотреть на GitHub</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+<!--
+      <li class="portfolio__item">
+        <article class="project">
+          <div class="project__image-wrap">
+            <a class="project__image-link" href="#" data-hover-tooltip="На сайт">
+              <img class="project__image" src="img/mockups/003.png" alt="Превью проекта ARTACTIVE">
+            </a>
+          </div>
+          <div class="project__content">
+            <span class="project__title">Проект:</span>
+            <h1 class="project__name">Wooder</h1>
+            <div class="text-content">
+              <p>Верстка уникального шаблона для декор-студии изделий из дерева Wooder.
+                Фиксированный сайт.</p>
+              <h3>Технологии:</h3>
+              <ul>
+                <li>HTML5 - семантическая разметка сайта</li>
+                <li>CSS3</li>
+                <li>Препроцессор Sass + Gulp</li>
+                <li>Адаптивная верстка</li>
+                <li>Адаптивные изображения</li>
+                <li>jQuery</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="project__links">
+              <a class="button project__btn" href="http://shockolada.site/projects/yes/" target="_blank">Перейти</a>
+              <a class="button button--link project__btn" href="https://github.com/Shockolada/yes"
+                target="_blank"><span>Посмотреть на GitHub</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="portfolio__item">
+        <article class="project">
+          <div class="project__image-wrap">
+            <a class="project__image-link" href="#" data-hover-tooltip="На сайт">
+              <img class="project__image" src="img/projects/01.png" alt="Превью проекта Yes" title="На сайт">
+            </a>
           </div>
           <div class="project__content">
             <span class="project__title">Проект:</span>
             <h1 class="project__name">.Yes</h1>
+            <div class="project__date">
+              <b>Период: </b>
+              <span class="project__date">Июнь 2018</span>
+            </div>
             <div class="text-content">
               <p>Разработка landing page для курсов по изучению английского языка. Верстка
                 уникального шаблона с использованием flexbox, адаптация под мобильные устройства.</p>
@@ -41,10 +151,9 @@
       <li class="portfolio__item">
         <article class="project">
           <div class="project__image-wrap">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/projects/02.png">
-              <img class="project__image" src="img/projects/02.png" alt="Превью проекта ARTACTIVE">
-            </picture>
+            <a class="project__image-link" href="#" data-hover-tooltip="На сайт">
+              <img class="project__image" src="img/mockups/01.png" alt="Превью проекта ARTACTIVE">
+            </a>
           </div>
           <div class="project__content">
             <span class="project__title">Проект:</span>
@@ -75,10 +184,7 @@
       <li class="portfolio__item">
         <article class="project">
           <div class="project__image-wrap">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/projects/03.png">
-              <img class="project__image" src="img/projects/03.png" alt="Превью проекта ARTACTIVE">
-            </picture>
+            <img class="project__image" src="img/mockups/02.png" alt="Превью проекта ARTACTIVE">
           </div>
           <div class="project__content">
             <span class="project__title">Проект:</span>
@@ -105,6 +211,99 @@
           </div>
         </article>
       </li>
+
+      <li class="portfolio__item">
+        <article class="project">
+          <div class="project__image-wrap">
+            <img class="project__image" src="img/mockups/03.png" alt="Превью проекта ARTACTIVE">
+          </div>
+          <div class="project__content">
+            <span class="project__title">Проект:</span>
+            <h1 class="project__name">Wooder</h1>
+            <div class="text-content">
+              <p>Верстка уникального шаблона для декор-студии изделий из дерева Wooder.
+                Фиксированный сайт.</p>
+              <h3>Технологии:</h3>
+              <ul>
+                <li>HTML5 - семантическая разметка сайта</li>
+                <li>CSS3</li>
+                <li>Препроцессор Sass + Gulp</li>
+                <li>Адаптивная верстка</li>
+                <li>Адаптивные изображения</li>
+                <li>jQuery</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="project__links">
+              <a class="button project__btn" href="http://shockolada.site/projects/yes/" target="_blank">Перейти</a>
+              <a class="button button--link project__btn" href="https://github.com/Shockolada/yes"
+                target="_blank"><span>Посмотреть на GitHub</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="portfolio__item">
+        <article class="project">
+          <div class="project__image-wrap">
+            <img class="project__image" src="img/mockups/05.png" alt="Превью проекта ARTACTIVE">
+          </div>
+          <div class="project__content">
+            <span class="project__title">Проект:</span>
+            <h1 class="project__name">Wooder</h1>
+            <div class="text-content">
+              <p>Верстка уникального шаблона для декор-студии изделий из дерева Wooder.
+                Фиксированный сайт.</p>
+              <h3>Технологии:</h3>
+              <ul>
+                <li>HTML5 - семантическая разметка сайта</li>
+                <li>CSS3</li>
+                <li>Препроцессор Sass + Gulp</li>
+                <li>Адаптивная верстка</li>
+                <li>Адаптивные изображения</li>
+                <li>jQuery</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="project__links">
+              <a class="button project__btn" href="http://shockolada.site/projects/yes/" target="_blank">Перейти</a>
+              <a class="button button--link project__btn" href="https://github.com/Shockolada/yes"
+                target="_blank"><span>Посмотреть на GitHub</span></a>
+            </div>
+          </div>
+        </article>
+      </li>
+
+      <li class="portfolio__item">
+        <article class="project">
+          <div class="project__image-wrap">
+            <img class="project__image" src="img/mockups/06.png" alt="Превью проекта ARTACTIVE">
+          </div>
+          <div class="project__content">
+            <span class="project__title">Проект:</span>
+            <h1 class="project__name">Wooder</h1>
+            <div class="text-content">
+              <p>Верстка уникального шаблона для декор-студии изделий из дерева Wooder.
+                Фиксированный сайт.</p>
+              <h3>Технологии:</h3>
+              <ul>
+                <li>HTML5 - семантическая разметка сайта</li>
+                <li>CSS3</li>
+                <li>Препроцессор Sass + Gulp</li>
+                <li>Адаптивная верстка</li>
+                <li>Адаптивные изображения</li>
+                <li>jQuery</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="project__links">
+              <a class="button project__btn" href="http://shockolada.site/projects/yes/" target="_blank">Перейти</a>
+              <a class="button button--link project__btn" href="https://github.com/Shockolada/yes"
+                target="_blank"><span>Посмотреть на GitHub</span></a>
+            </div>
+          </div>
+        </article>
+      </li> -->
     </ul>
 
     <button class="section-btn section__btn">Показать ещё</button>

@@ -3,7 +3,7 @@
   min-width: 176px;
   box-sizing: border-box;
   padding: 11px 20px;
-  border: solid 2px #777777;
+  border: solid 2px #b1b1b1;
   border-radius: 10px;
   cursor: pointer;
 
@@ -21,7 +21,7 @@
 }
 
 .section-btn:hover {
-  box-shadow: 0 16px 40px 0 rgba(0,0,0,.6);
+  box-shadow: 0 16px 40px 0 rgba(0,0,0, 0.4);
   transform: scale(1.03);
   border-color: transparent;
   color: $color-black;

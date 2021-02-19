@@ -1,86 +1,215 @@
-<section class="swiper-container hero-slider container section" id="home" data-section>
-  <h2 class="visually-hidden">Слайдер с примерами проектов</h2>
+<section class="hero-slider section" id="home" data-section>
+  <div class="hero-slider__container swiper-container container">
+    <h2 class="hero-slider__title">Свежее</h2>
+    <div class="swiper-wrapper hero-slider__slides">
+      <div class="swiper-slide hero-slide">
+        <div class="hero-slide__image-wrap" data-swiper-parallax="-150">
+          <a class="hero-slide__image-link" href="#" data-hover-tooltip="На сайт">
+            <!-- 920 х 640 -->
+            <img class="hero-slide__image" src="img/mockups/new.png" alt="Превью проекта Yes на разных устройствах">
+          </a>
+        </div>
 
-  <div class="swiper-wrapper hero-slider__slides">
-    <div class="swiper-slide hero-slide">
-      <div class="hero-slide__image-wrap" data-swiper-parallax="-150">
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/hero/hero-01-md.jpg 1x, img/hero/hero-01-md@2x.jpg 2x">
-          <source media="(min-width: 1024px)" srcset="img/hero/hero-01-lg.jpg 1x, img/hero/hero-01-lg@2x.jpg 2x">
-          <img class="hero-slide__image" src="img/hero/hero-01-sm.jpg" srcset="img/hero/hero-01-sm@2x.jpg 2x"
-            alt="Превью проекта Yes на разных устройствах">
-        </picture>
+        <div class="hero-slide__description">
+          <!-- <span class="hero-slide__title" data-swiper-parallax="-150">Проект:</span> -->
+          <!-- <div class="hero-slide__descr-mob-bg"> -->
+            <h3 class="hero-slide__name">.Yes</h3>
+            <div class="hero-slide__text">
+              <p>Landing page для курсов по изучению английского языка.<br>
+                Верстка уникального шаблона, адаптация под мобильные устройства.</p>
+            </div>
+            <!-- <ul class="hero-slide__technologies technologies">
+              <li class="technologies__item"><img src="img/icons/html.svg" alt="HTML5"></li>
+              <li class="technologies__item"><img src="img/icons/js.svg" alt="JavaScript"></li>
+              <li class="technologies__item"><img src="img/icons/css.svg" alt="CSS3"></li>
+              <li class="technologies__item"><img src="img/icons/jq.svg" alt="Jquery"></li>
+              <li class="technologies__item"><img src="img/icons/es6.svg" alt="es6"></li>
+              <li class="technologies__item"><img src="img/icons/wp.svg" alt="es6"></li>
+              <li class="technologies__item"><img src="img/icons/react.svg" alt="React JS"></li>
+            </ul> -->
+
+            <div class="hero-slide__technologies ">
+              <ul class="technologies">
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#css"></use>
+                  </svg>
+                  <span class="technologies__caption">CSS3</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#ecmascript"></use>
+                  </svg>
+                  <span class="technologies__caption">ECMAScript 6</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#es6"></use>
+                  </svg>
+                  <span class="technologies__caption">ES6</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#html"></use>
+                  </svg>
+                  <span class="technologies__caption">HTML5</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#jquery"></use>
+                  </svg>
+                  <span class="technologies__caption">jQuery</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#react"></use>
+                  </svg>
+                  <span class="technologies__caption">React</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#wp"></use>
+                  </svg>
+                  <span class="technologies__caption">WordPress</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hero-slide__technologies ">
+              <ul class="technologies">
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#css-a"></use>
+                  </svg>
+                  <span class="technologies__caption">CSS3</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#ecmascript-a"></use>
+                  </svg>
+                  <span class="technologies__caption">ECMAScript 6</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#es6-a"></use>
+                  </svg>
+                  <span class="technologies__caption">ES6</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#html-a"></use>
+                  </svg>
+                  <span class="technologies__caption">HTML5</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#jquery-a"></use>
+                  </svg>
+                  <span class="technologies__caption">jQuery</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#react-a"></use>
+                  </svg>
+                  <span class="technologies__caption">React</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#wp-a"></use>
+                  </svg>
+                  <span class="technologies__caption">WordPress</span>
+                </li>
+              </ul>
+            </div>
+
+            <a class="button button--big hero-slide__btn" href="http://shockolada.site/projects/yes/"
+              target="_blank">Посмотреть</a>
+          <!-- </div> -->
+        </div>
       </div>
+      <div class="swiper-slide hero-slide">
+        <div class="hero-slide__image-wrap" data-swiper-parallax="-150">
+          <a class="hero-slide__image-link" href="#" data-hover-tooltip="На сайт">
+            <img class="hero-slide__image" src="img/mockups/new.png" alt="Превью проекта Yes на разных устройствах">
+          </a>
+        </div>
 
-      <div class="hero-slide__description">
-        <span class="hero-slide__title" data-swiper-parallax="-150">Проект:</span>
-        <div class="hero-slide__descr-mob-bg">
-          <h3 class="hero-slide__name">.Yes</h3>
-          <p class="hero-slide__text">Landing page для курсов по изучению английского языка.<br>
-            Верстка уникального шаблона, адаптация под мобильные устройства.</p>
+        <div class="hero-slide__description">
+          <!-- <span class="hero-slide__title" data-swiper-parallax="-150">Проект:</span> -->
+          <div class="hero-slide__descr-mob-bg">
+            <h3 class="hero-slide__name">.Yes</h3>
+            <div class="hero-slide__text">
+              <p>Landing page для курсов по изучению английского языка.<br>
+                Верстка уникального шаблона, адаптация под мобильные устройства.</p>
+            </div>
+            <ul class="hero-slide__technologies technologies">
+              <li class="technologies__item"><img src="img/icons/html.svg" alt="HTML5"></li>
+              <li class="technologies__item"><img src="img/icons/js.svg" alt="JavaScript"></li>
+              <li class="technologies__item"><img src="img/icons/css.svg" alt="CSS3"></li>
+              <li class="technologies__item"><img src="img/icons/jq.svg" alt="Jquery"></li>
+              <li class="technologies__item"><img src="img/icons/es6.svg" alt="es6"></li>
+              <li class="technologies__item"><img src="img/icons/wp.svg" alt="es6"></li>
+              <li class="technologies__item"><img src="img/icons/react.svg" alt="React JS"></li>
+            </ul>
 
-          <ul class="hero-slide__technologies technologies">
-            <li class="technologies__item"><img src="img/icons/html.svg" alt="HTML5"></li>
-            <li class="technologies__item"><img src="img/icons/js.svg" alt="JavaScript"></li>
-            <li class="technologies__item"><img src="img/icons/css.svg" alt="CSS3"></li>
-            <li class="technologies__item"><img src="img/icons/jq.svg" alt="Jquery"></li>
-          </ul>
+            <a class="button button--big hero-slide__btn" href="http://shockolada.site/projects/yes/"
+              target="_blank">Посмотреть</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide hero-slide">
+        <div class="hero-slide__image-wrap" data-swiper-parallax="-150">
+          <a class="hero-slide__image-link" href="#" data-hover-tooltip="На сайт">
+            <img class="hero-slide__image" src="img/mockups/new.png" alt="Превью проекта Yes на разных устройствах">
+          </a>
+        </div>
 
-          <a class="button button--big hero-slide__btn" href="http://shockolada.site/projects/yes/"
-            target="_blank">Посмотреть</a>
+        <div class="hero-slide__description">
+          <!-- <span class="hero-slide__title" data-swiper-parallax="-150">Проект:</span> -->
+          <div class="hero-slide__descr-mob-bg">
+            <h3 class="hero-slide__name">.Yes</h3>
+            <div class="hero-slide__text">
+              <p>Landing page для курсов по изучению английского языка.<br>
+                Верстка уникального шаблона, адаптация под мобильные устройства.</p>
+            </div>
+
+            <ul class="hero-slide__technologies technologies">
+              <li class="technologies__item"><img src="img/icons/html.svg" alt="HTML5"></li>
+              <li class="technologies__item"><img src="img/icons/js.svg" alt="JavaScript"></li>
+              <li class="technologies__item"><img src="img/icons/css.svg" alt="CSS3"></li>
+              <li class="technologies__item"><img src="img/icons/jq.svg" alt="Jquery"></li>
+              <li class="technologies__item"><img src="img/icons/es6.svg" alt="es6"></li>
+              <li class="technologies__item"><img src="img/icons/wp.svg" alt="es6"></li>
+              <li class="technologies__item"><img src="img/icons/react.svg" alt="React JS"></li>
+            </ul>
+
+            <a class="button button--big hero-slide__btn" href="http://shockolada.site/projects/yes/"
+              target="_blank">Посмотреть</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="swiper-slide hero-slide">
-      <div class="hero-slide__image-wrap" data-swiper-parallax="-150">
-        <picture>
-          <source media="(min-width: 1024px)" srcset="img/hero/hero-01-lg.jpg 1x, img/hero/hero-01-lg@2x.jpg 2x">
-          <img class="hero-slide__image" src="img/hero/hero-01-sm.jpg" srcset="img/hero/hero-01-sm@2x.jpg 2x"
-            alt="Превью проекта Yes на разных устройствах">
-        </picture>
-      </div>
 
-      <div class="hero-slide__description">
-        <span class="hero-slide__title" data-swiper-parallax="-150">Проект:</span>
-        <div class="hero-slide__descr-mob-bg">
-          <h3 class="hero-slide__name">.Yes</h3>
-          <p class="hero-slide__text">Landing page для курсов по изучению английского языка.<br>
-            Верстка уникального шаблона, адаптация под мобильные устройства.</p>
+    <div class="hero-slider__controls">
+      <div class="hero-slider__pagination"></div>
 
-          <ul class="hero-slide__technologies technologies">
-            <li class="technologies__item"><img src="img/icons/html.svg" alt="HTML5"></li>
-            <li class="technologies__item"><img src="img/icons/js.svg" alt="JavaScript"></li>
-            <li class="technologies__item"><img src="img/icons/css.svg" alt="CSS3"></li>
-            <li class="technologies__item"><img src="img/icons/jq.svg" alt="Jquery"></li>
-          </ul>
-
-          <a class="button button--big hero-slide__btn" href="http://shockolada.site/projects/yes/"
-            target="_blank">Посмотреть</a>
+      <div class="hero-slider__arrows">
+        <div class="hero-slider__arrow hero-slider__button-prev">
+          <svg class="hero-slider__arrow-icon" width="20" height="14">
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </div>
+        <div class="hero-slider__arrow hero-slider__button-next">
+          <svg class="hero-slider__arrow-icon" width="20" height="14">
+            <use xlink:href="img/sprite.svg#arrow-right"></use>
+          </svg>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="hero-slider__controls">
-    <div class="hero-slider__pagination"></div>
-
-    <div class="hero-slider__arrows">
-      <div class="hero-slider__arrow hero-slider__button-prev">
-        <svg class="hero-slider__arrow-icon" width="20" height="14">
-          <use xlink:href="img/sprite.svg#arrow-left"></use>
-        </svg>
-      </div>
-      <div class="hero-slider__arrow hero-slider__button-next">
-        <svg class="hero-slider__arrow-icon" width="20" height="14">
-          <use xlink:href="img/sprite.svg#arrow-right"></use>
-        </svg>
-      </div>
+    <div class="hero-slider__note">
+      <span class="hero-slider__note-top">See more projects</span>
+      <span class="hero-slider__note-bottom">Scroll down</span>
     </div>
   </div>
-
-  <div class="hero-slider__note">
-    <span class="hero-slider__note-top">See more projects</span>
-    <span class="hero-slider__note-bottom">Scroll down</span>
-  </div>
-
 </section>

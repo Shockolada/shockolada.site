@@ -1,40 +1,58 @@
 .social {
   display: flex;
-  align-items: center;
-
+  flex-wrap: wrap;
   @include list-reset;
 
-  // max-width: 280px;
-  // min-height: 24px;
-  margin-right: -16px;
+  margin-right: -8px;
 }
 
 .social__item {
-  margin-right: 16px;
+  margin-right: 8px;
   padding: 0;
-
-  font-size: 0;
-  line-height: 0;
 }
 
 .social__link {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
 
   transition: all 0.2s ease-in-out;
 }
 
-.social__link:hover {
-  transform: scale(1.5);
+.social__icon {
+  width: 16px;
+  height: 16px;
 }
 
-.social__icon {
-  width: 18px;
-  height: 18px;
+.social--white {
+  .social__icon {
+    fill: $color-white;
+  }
+}
+
+.social--center {
+  justify-content: center;
+}
+
+.social--lg {
+  margin-right: -16px;
+  margin-bottom: -16px;
+
+  .social__item {
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+
+  .social__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: $desktop_xs) {
+  .social__link:hover {
+    transform: scale(1.5);
+  }
 }

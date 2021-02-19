@@ -1,6 +1,6 @@
 .title {
   margin: 0;
-  margin-bottom: calcResponsiveSize(10, 50);
+  // margin-bottom: calcResponsiveSize(12, 48);
 
   font-family: $font-accent;
   @include responsiveFontSize(32, 60, 320, $desktop-container);
@@ -35,6 +35,6 @@
 
 @media (min-width: $desktop-container) {
   .title {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
   }
 }

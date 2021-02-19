@@ -1,0 +1,18 @@
+.hover-tooltip {
+  content: attr(data-hover-tooltip);
+  position: absolute;
+  z-index: 11;
+  padding: 2px 6px;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #ebebeb;
+  color: $color-text;
+  line-height: 1;
+  white-space: nowrap;
+  // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+
+  top: 0;
+  left: 0;
+  transform: translateY(calc(100% + 4px));
+  pointer-events: none;
+}

@@ -21,7 +21,6 @@ const navigation = () => {
     }
   });
 
-
   function addHighlight(item) {
     item.classList.add('active');
   }

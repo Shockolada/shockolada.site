@@ -1,9 +1,16 @@
 /* CONTAINER */
 .container {
+  width: 100%;
   min-width: 320px;
   max-width: $desktop-container;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+@media (min-width: $tablet_s) {
+  .container {
+    padding: 0 24px;
+  }
 }
 
 @media (min-width: $desktop_s) {

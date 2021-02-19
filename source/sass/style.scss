@@ -17,14 +17,6 @@
 
 /* LIBRARIES */
 
-/* MODULES */
-@import "modules/burger-btn.scss";
-@import "modules/close-btn.scss";
-@import "modules/social.scss";
-@import "modules/technologies.scss";
-@import "modules/section-btn.scss";
-@import "modules/langs.scss";
-
 /* HELPERS */
 @import "helpers/container.scss";
 @import "helpers/visually-hidden.scss";
@@ -38,6 +30,18 @@
 @import "helpers/section-info.scss";
 @import "helpers/focus-visible.scss";
 @import "helpers/form.scss";
+
+/* MODULES */
+@import "modules/burger-btn.scss";
+@import "modules/burger-icon.scss";
+@import "modules/close-btn.scss";
+@import "modules/social.scss";
+@import "modules/technologies.scss";
+@import "modules/section-btn.scss";
+@import "modules/langs.scss";
+@import "modules/scroll-top.scss";
+@import "modules/cookies.scss";
+@import "modules/hover-tooltip.scss";
 
 /* SECTIONS */
 @import "sections/main/page-header.scss";

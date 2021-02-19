@@ -1,10 +1,12 @@
-.langs {}
+.langs {
+  line-height: 1;
+}
 
 .langs__list {
   display: flex;
   align-items: center;
   @include list-reset;
-  margin: 0 -2px;
+  margin: 0 -4px;
 }
 
 .langs__item {
@@ -12,6 +14,7 @@
 }
 
 .langs__link {
+  display: inline-flex;
   padding: 4px;
   font-size: 13px;
   font-weight: 600;
@@ -26,16 +29,21 @@
 }
 
 .langs__link.active {
-  display: none;
+  color: $color-black;
 }
 
 @media (min-width: $desktop_xs) {
   .langs__list {
+    margin-top: 0;
     margin: 0 -4px;
   }
 
+  .langs__item {
+    margin: 0;
+  }
+
   .langs__link {
-    padding: 20px 4px;
+    padding: 20px 12px;
     padding-bottom: 13px;
   }
 }

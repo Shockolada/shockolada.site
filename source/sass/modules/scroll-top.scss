@@ -1,0 +1,49 @@
+.scroll-top {
+  position: fixed;
+  right: 16px;
+  bottom: 32px;
+  z-index: 3;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+
+  opacity: 1;
+  visibility: visible;
+
+  transition: 0.2s all linear;
+}
+
+.scroll-top.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-top__icon {
+  fill: $color-black;
+}
+
+.scroll-top:hover {
+  box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.6);
+  transform: scale(1.03);
+}
+
+@media (min-width: $tablet_s) {
+  .scroll-top {
+    right: 30px;
+  }
+}
+
+@media (min-width: $desktop_s) {
+  .scroll-top {
+    // right: 100px;
+  }
+}
+
+@media (min-width: $desktop-container) {
+  .scroll-top {
+    right: calc(50% - (1400px / 2) + 30px);
+  }
+}

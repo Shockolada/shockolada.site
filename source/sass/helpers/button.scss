@@ -5,7 +5,6 @@
   padding: 11px 28px;
   border: none;
   border-radius: 10px;
-  cursor: pointer;
 
   font-family: $font-accent;
   @include responsiveFontSize(12, 16);
@@ -23,6 +22,11 @@
 .button--big {
   padding: 15px 28px;
   @include responsiveFontSize(16, 18);
+}
+
+.button--sm {
+  min-width: auto;
+  padding: 12px 16px;
 }
 
 .button--pink {
@@ -51,20 +55,6 @@
   }
 }
 
-.button:hover {
-  box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.6);
-  transform: scale(1.03);
-}
-
-.button--link:hover {
-
-  span {
-    &::after {
-      transform: scale(0);
-    }
-  }
-}
-
 @media(min-width: $tablet) {
 
   .button {
@@ -81,5 +71,19 @@
   .button--big {
     padding: 19px 28px;
     font-size: 18px;
+  }
+
+  .button:hover {
+    box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.03);
+  }
+
+  .button--link:hover {
+
+    span {
+      &::after {
+        transform: scale(0);
+      }
+    }
   }
 }

@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 
 function heroSlider() {
-  var heroSlider = new Swiper('.hero-slider', {
+  var heroSlider = new Swiper('.hero-slider .swiper-container', {
     pagination: {
       el: '.hero-slider__pagination',
       type: 'fraction',
@@ -10,7 +10,7 @@ function heroSlider() {
       nextEl: '.hero-slider__button-next',
       prevEl: '.hero-slider__button-prev',
     },
-    loop: true,
+    // loop: true,
     parallax: true,
     speed: 800,
     slidesPerView: 1,

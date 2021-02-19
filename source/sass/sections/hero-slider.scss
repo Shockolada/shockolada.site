@@ -1,12 +1,31 @@
 .hero-slider {
   position: relative;
   margin-bottom: 20px;
-  padding-top: 30px;
-  overflow: visible;
+  z-index: 1;
 
   .swiper-button-disabled {
-    opacity: 0.5;
+    opacity: 0.2;
+    pointer-events: none;
   }
+}
+
+.hero-slider__container {
+  width: 100%;
+  padding-top: 30px;
+  padding-top: 48px;
+  overflow: visible;
+}
+
+.hero-slider__title {
+  position: absolute;
+  top: 16px;
+  left: 32px;
+  z-index: 3;
+  margin: 0;
+  font-family: $font-accent;
+  @include responsiveFontSize(16, 24);
+  font-weight: 700;
+  // display: none;
 }
 
 .hero-slider__controls {
@@ -14,7 +33,6 @@
   top: 0;
   right: 8px;
   z-index: 2;
-
   display: flex;
   align-items: center;
   min-width: 156px;
@@ -84,18 +102,25 @@
 @media (min-width: $tablet_s) {
   .hero-slider {
     margin-bottom: 40px;
+  }
+
+  .hero-slider__container {
     padding-top: 0;
-    overflow: hidden;
+  }
+
+  .hero-slider__title {
+    display: block;
+    left: 48px;
   }
 
   .hero-slider__controls {
-    top: 30px;
-    left: 40px;
+    top: 56px;
+    left: 48px;
     right: unset;
     flex-direction: column;
     align-items: flex-end;
     min-width: 76px;
-    padding: 15px;
+    padding: 16px;
   }
 
   .hero-slider__pagination {
@@ -150,7 +175,17 @@
 @media (min-width: $desktop_xs) {
   .hero-slider {
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 0;
+  }
+
+  .hero-slider__container {
+    padding-left: 40px;
+    padding-right: 32px;
+    padding-bottom: 64px;
+  }
+
+  .hero-slider__title {
+    left: 40px;
   }
 
   .hero-slide__description {
@@ -179,7 +214,7 @@
 
   .hero-slider__controls {
     left: unset;
-    right: 0;
+    right: 16px;
     top: 80px;
     width: 80px;
   }
@@ -187,16 +222,29 @@
 
 @media (min-width: $desktop_s) {
   .hero-slider {
-    margin-top: 70px;
-    margin-bottom: 120px;
+    margin-top: 56px;
+    margin-bottom: 36px;
+    overflow: hidden;
   }
 
-  .hero-slide__description {
-    margin-top: 100px;
+  .hero-slider__container {
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow: hidden;
   }
+
+  .hero-slider__title {
+    top: 24px;
+    left: 100px;
+  }
+
+  // .hero-slide__description {
+  //   margin-top: 100px;
+  // }
 
   .hero-slider__controls {
     top: 120px;
+    top: 96px;
     right: 70px;
     min-width: 104px;
     padding: 30px;

@@ -1,27 +1,25 @@
 .text-content {
-  p {
-    line-height: 1.5;
-  }
+  line-height: 1.4;
+
   ul {
     @include list-reset;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 
     li {
       position: relative;
-      margin-bottom: 8px;
       padding-left: 16px;
-    }
 
-    li::before {
-      content: "";
-      position: absolute;
-      top: 5.5px;
-      left: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
 
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background-color: $color-text;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $color-text;
+      }
     }
   }
 }

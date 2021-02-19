@@ -1,0 +1,55 @@
+.burger-icon {
+  flex-shrink: 0;
+  height: 14px;
+  position: relative;
+  width: 17px;
+}
+
+.burger-icon__line {
+  background-color: #555555;
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+}
+
+.burger-icon__line--top {
+  top: 0;
+}
+
+.burger-icon__line--middle {
+  top: 7px;
+  transition: width 0.1s linear 0.3s;
+}
+
+.burger-icon__line--bottom {
+  top: 14px;
+}
+
+.burger-icon__line--top,
+.burger-icon__line--bottom {
+  transform-origin: center;
+  transition: width 0.1s linear, top 0.1s linear 0.1s, transform 0.1s linear;
+}
+
+.active> .burger-icon {
+
+  .burger-icon__line--top {
+    transform: rotate(45deg);
+  }
+
+  .burger-icon__line--top,
+  .burger-icon__line--bottom {
+    top: calc(50% - 0.1rem);
+    transition: width 0.1s linear, top 0.1s linear 0.1s, transform 0.1s linear 0.3s;
+  }
+
+  .burger-icon__line--bottom {
+    transform: rotate(-45deg);
+  }
+
+  .burger-icon__line--middle {
+    transition: width 0.1s linear;
+    width: 0;
+  }
+}

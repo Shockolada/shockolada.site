@@ -1,7 +1,15 @@
 .section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 54px;
+}
+
+.section__info {
+  margin-bottom: calcResponsiveSize(16, 54);
+
+  .section-info  {
+    margin-top: calcResponsiveSize(16, 48);
+  }
 }
 
 .section__btn {
@@ -11,20 +19,30 @@
 
 @media (min-width: $tablet) {
   .section {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 
   .section__btn {
-    margin-top: 40px;
+    margin-top: 56px;
   }
 }
 
 @media (min-width: $desktop_xs) {
   .section {
-    margin-bottom: 110px;
+    margin-bottom: 108px;
   }
 
   .section__btn {
-    margin-top: 80px;
+    margin-top: 96px;
+  }
+}
+
+@media (min-width: $desktop-container) {
+  .section__info {
+    margin-bottom: 54px;
+
+    .section-info {
+      margin-top: 48px;
+    }
   }
 }

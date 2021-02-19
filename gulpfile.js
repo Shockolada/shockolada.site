@@ -342,7 +342,7 @@ gulp.task('build-js-prod', () => {
         }]
       }
     }))
-    .pipe(gulp.dest(src + 'js/bundle'));
+    .pipe(gulp.dest(dist + 'js'));
 });
 
 // concat scripts production

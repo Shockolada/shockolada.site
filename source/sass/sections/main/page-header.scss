@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 7;
   width: 100%;
   padding: 13px 0;
   background-color: #ffffff;
@@ -59,16 +59,18 @@
   .page-header__logo {
     width: 220px;
     margin-right: auto;
+    margin-top: 4px;
   }
 
   .page-header__social {
     margin: 0;
     margin-left: 50px;
+    margin-top: 3px;
   }
 
   .page-header__langs {
     margin: 0;
     margin-left: 40px;
-    margin-top: 5px;
+    // margin-top: 5px;
   }
 }
