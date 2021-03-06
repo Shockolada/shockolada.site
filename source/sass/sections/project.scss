@@ -107,7 +107,7 @@
     align-items: flex-start;
     padding: 0;
 
-    box-shadow: unset;
+    box-shadow: none;
   }
 
   .project__image-wrap,
@@ -134,6 +134,7 @@
 
   .portfolio__item:nth-child(2n) {
 
+    &.project,
     .project {
       flex-direction: row-reverse;
 
@@ -144,7 +145,7 @@
           padding-right: 16px;
 
           &::before {
-            left: unset;
+            left: auto;
             right: 0;
           }
         }

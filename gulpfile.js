@@ -29,7 +29,7 @@ const cssParts = [
 ];
 
 const jsParts = [
-  'node_modules/jquery/dist/jquery.min.js', // Пути к js которые будут собраны в главный файл стилей 
+  'node_modules/jquery/dist/jquery.min.js', // Пути к js которые будут собраны в главный файл стилей
 ];
 
 
@@ -239,7 +239,7 @@ gulp.task('copy', () => {
     }, {
       since: gulp.lastRun('copy')
     })
-    .pipe(newer(dist)) // Сверяет файлы в исходной и конечной папке, 
+    .pipe(newer(dist)) // Сверяет файлы в исходной и конечной папке,
     // пропуская если файла нет или дата модификации новее
     .pipe(debug({
       title: 'copy' // Показывает какие файлы скопированы
@@ -284,7 +284,8 @@ gulp.task('serve-prod', () => {
 
   gulp.watch(src + '**/*.html', gulp.parallel('html')).on('change', server.reload);
   gulp.watch([src + 'js/**/*.js', '!' + src + 'js/bundle/**/*.*'], gulp.series('concat-js-prod'));
-  gulp.watch(src + 'js/bundle/**/*.js', gulp.series('build-js-prod')).on('change', server.reload);
+  gulp.watch(src + 'js/**/*.js', gulp.series('build-js-prod')).on('change', server.reload);
+  // gulp.watch(src + 'js/bundle/**/*.js', gulp.series('build-js-prod')).on('change', server.reload);
   gulp.watch(src + 'sass/**/*.{scss,sass}', gulp.parallel('sass'));
   gulp.watch([src + 'css/**/*.css', '!' + src + 'css/independent/**/*.*'], gulp.parallel('concat-css-prod'));
   gulp.watch(src + 'css/independent/**/*.css', gulp.parallel('css-single'));

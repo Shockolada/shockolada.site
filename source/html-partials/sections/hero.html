@@ -6,7 +6,12 @@
         <div class="hero-slide__image-wrap" data-swiper-parallax="-150">
           <a class="hero-slide__image-link" href="#" data-hover-tooltip="На сайт">
             <!-- 920 х 640 -->
-            <img class="hero-slide__image" src="img/mockups/new.png" alt="Превью проекта Yes на разных устройствах">
+            <picture>
+              <source media="(min-width: 750px)"
+                srcset="img/hero/mirush.jpg 1x, img/hero/mirush@2x.jpg 2x">
+              <img class="hero-slide__image" src="img/hero/mirush-s.jpg" srcset="img/hero/mirush-s@2x.jpg 2x">
+            </picture>
+            <!-- <img class="hero-slide__image" src="img/hero/mirush.jpg" alt="Превью проекта Yes на разных устройствах"> -->
           </a>
         </div>
 
@@ -28,13 +33,19 @@
               <li class="technologies__item"><img src="img/icons/react.svg" alt="React JS"></li>
             </ul> -->
 
-            <div class="hero-slide__technologies ">
+            <!-- <div class="hero-slide__technologies ">
               <ul class="technologies">
                 <li class="technologies__item">
                   <svg class="technologies__icon" width="40" height="40">
                     <use xlink:href="img/sprite.svg#css"></use>
                   </svg>
                   <span class="technologies__caption">CSS3</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#js"></use>
+                  </svg>
+                  <span class="technologies__caption">JavaScript</span>
                 </li>
                 <li class="technologies__item">
                   <svg class="technologies__icon" width="40" height="40">
@@ -73,7 +84,7 @@
                   <span class="technologies__caption">WordPress</span>
                 </li>
               </ul>
-            </div>
+            </div> -->
 
             <div class="hero-slide__technologies ">
               <ul class="technologies">
@@ -82,6 +93,12 @@
                     <use xlink:href="img/sprite.svg#css-a"></use>
                   </svg>
                   <span class="technologies__caption">CSS3</span>
+                </li>
+                <li class="technologies__item">
+                  <svg class="technologies__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#js-a"></use>
+                  </svg>
+                  <span class="technologies__caption">JavaScript</span>
                 </li>
                 <li class="technologies__item">
                   <svg class="technologies__icon" width="40" height="40">
@@ -130,7 +147,13 @@
       <div class="swiper-slide hero-slide">
         <div class="hero-slide__image-wrap" data-swiper-parallax="-150">
           <a class="hero-slide__image-link" href="#" data-hover-tooltip="На сайт">
-            <img class="hero-slide__image" src="img/mockups/new.png" alt="Превью проекта Yes на разных устройствах">
+            <!-- <picture>
+              <source media="(max-width: 750px)"
+                srcset="img/hero/tagme.jpg 1x, img/hero/tagme@2x.jpg 2x">
+              <img class="hero-slide__image" src="img/hero/tagme-s.jpg" srcset="img/hero/tagme-s@2x.jpg 2x">
+            </picture> -->
+            <!-- <img class="hero-slide__image" src="img/hero/tagme.jpg" alt="Превью проекта Yes на разных устройствах"> -->
+            <img class="hero-slide__image" src="img/hero/mirush.jpg" alt="Превью проекта Yes на разных устройствах">
           </a>
         </div>
 
@@ -142,37 +165,6 @@
               <p>Landing page для курсов по изучению английского языка.<br>
                 Верстка уникального шаблона, адаптация под мобильные устройства.</p>
             </div>
-            <ul class="hero-slide__technologies technologies">
-              <li class="technologies__item"><img src="img/icons/html.svg" alt="HTML5"></li>
-              <li class="technologies__item"><img src="img/icons/js.svg" alt="JavaScript"></li>
-              <li class="technologies__item"><img src="img/icons/css.svg" alt="CSS3"></li>
-              <li class="technologies__item"><img src="img/icons/jq.svg" alt="Jquery"></li>
-              <li class="technologies__item"><img src="img/icons/es6.svg" alt="es6"></li>
-              <li class="technologies__item"><img src="img/icons/wp.svg" alt="es6"></li>
-              <li class="technologies__item"><img src="img/icons/react.svg" alt="React JS"></li>
-            </ul>
-
-            <a class="button button--big hero-slide__btn" href="http://shockolada.site/projects/yes/"
-              target="_blank">Посмотреть</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide hero-slide">
-        <div class="hero-slide__image-wrap" data-swiper-parallax="-150">
-          <a class="hero-slide__image-link" href="#" data-hover-tooltip="На сайт">
-            <img class="hero-slide__image" src="img/mockups/new.png" alt="Превью проекта Yes на разных устройствах">
-          </a>
-        </div>
-
-        <div class="hero-slide__description">
-          <!-- <span class="hero-slide__title" data-swiper-parallax="-150">Проект:</span> -->
-          <div class="hero-slide__descr-mob-bg">
-            <h3 class="hero-slide__name">.Yes</h3>
-            <div class="hero-slide__text">
-              <p>Landing page для курсов по изучению английского языка.<br>
-                Верстка уникального шаблона, адаптация под мобильные устройства.</p>
-            </div>
-
             <ul class="hero-slide__technologies technologies">
               <li class="technologies__item"><img src="img/icons/html.svg" alt="HTML5"></li>
               <li class="technologies__item"><img src="img/icons/js.svg" alt="JavaScript"></li>

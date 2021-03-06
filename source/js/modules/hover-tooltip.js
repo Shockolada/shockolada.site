@@ -1,23 +1,47 @@
 const hoverTooltip = () => {
-  const tooltipContainers = document.querySelectorAll('[data-hover-tooltip]');
+  const tooltipsArea = document.querySelector('body'),
+    tooltipContainers = document.querySelectorAll('[data-hover-tooltip]'),
+    tooltipSelector = ('[data-hover-tooltip]');
 
   if (document.documentElement.offsetWidth > 940) {
     bindTooltip();
   }
 
   function bindTooltip() {
-    tooltipContainers.forEach(function(item) {
-      item.addEventListener('mouseenter', function() {
-        createTooltip(item);
-      });
+    tooltipsArea.addEventListener('mousemove', function(evt) {
+      const mouseOnTooltip = evt.target.dataset.hoverTooltip,
+        mouseOnTooltipInside = evt.target.closest(tooltipSelector),
+        tooltipElement = tooltipsArea.querySelector('.hover-tooltip');
 
-      item.addEventListener('mouseleave', function() {
-        destroyTooltip();
-      });
+      if (mouseOnTooltip || mouseOnTooltipInside) {
+        if (!tooltipElement) {
+          createTooltip(mouseOnTooltipInside);
+        }
 
-      item.addEventListener('mousemove', function(evt) {
-        setTooltipPosition(evt);
-      });
+        if (tooltipElement) {
+          setTooltipPosition(evt);
+        }
+      }
+
+      if (!(mouseOnTooltip || mouseOnTooltipInside)) {
+        if (tooltipElement) {
+          destroyTooltip();
+        }
+      }
+
+
+      // tooltipContainers.forEach(function(item) {
+      //   item.addEventListener('mouseenter', function() {
+      //   createTooltip(item);
+      // });
+
+      // item.addEventListener('mouseleave', function() {
+      //   destroyTooltip();
+      // });
+
+      // item.addEventListener('mousemove', function(evt) {
+      //   setTooltipPosition(evt);
+      // });
     });
   }
 

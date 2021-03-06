@@ -116,7 +116,7 @@
   .hero-slider__controls {
     top: 56px;
     left: 48px;
-    right: unset;
+    right: auto;
     flex-direction: column;
     align-items: flex-end;
     min-width: 76px;
@@ -213,7 +213,7 @@
   }
 
   .hero-slider__controls {
-    left: unset;
+    left: auto;
     right: 16px;
     top: 80px;
     width: 80px;
